@@ -55,6 +55,7 @@ async function updateTotalPrice() {
 
     try {
         const response = await fetch(`https://v6.exchangerate-api.com/v6/8fdf1fccc692fc99120dfd54/latest/${currency}`);
+        
         const data = await response.json();
         const conversionRate = data.conversion_rates.USD; 
         const convertedPrice = totalPrice * conversionRate;
