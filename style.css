@@ -4,11 +4,13 @@ body {
     text-align: center;
 }
 .container {
-    width: 80%;
-    margin: 0 auto; 
+    width: 90%;
+    max-width: 400px; 
+    margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 h1 {
     color: #333;
@@ -56,4 +58,9 @@ input[type="submit"]:hover {
 .warning {
     color: red;
     margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
 }
